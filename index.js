@@ -3,8 +3,8 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
-const charactersRoutes = require("./routes/characters");
-const comicsRoutes = require("./routes/comics");
+const charactersRoutes = require("./routes/characterRoutes");
+const comicsRoutes = require("./routes/comicRoutes");
 
 app.use(cors({ origin: true }), charactersRoutes, comicsRoutes, express.json());
 
